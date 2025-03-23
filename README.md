@@ -1,7 +1,7 @@
 # An Optimized Instantiation of Post-Quantum MQTT protocol on 8-bit AVR Sensor Nodes
 
 ## Introduction
-This code is a Crystals-Kyber for 8-bit AVR environment (Title : "**An Optimized Instantiation of Post-Quantum MQTT protocol on 8-bit AVR Sensor Nodes**”). Please email <darania@kookmin.ac.kr> if you have any suggestions for additions or improvements of my code. In the future, the goal of this project is to implement Post-Quantum Cryptography in constrained devices such as 8-bit AVR and 16-bit MSP430. Ultimately, I would like to design a PQC library for an AVR environment with minimal stack usage. If you have input about what should be covered, I'd be grateful for any input.
+This code accompanies our paper (Title : "**An Optimized Instantiation of Post-Quantum MQTT protocol on 8-bit AVR Sensor Nodes**”) accepted at [[AsiaCCS 2025, Cycle 1](https://asiaccs2025.hust.edu.vn/)]. Please email <darania@kookmin.ac.kr> if you have any suggestions for additions or improvements of my code. In the future, the goal of this project is to implement Post-Quantum Cryptography in constrained devices such as 8-bit AVR and 16-bit MSP430. Ultimately, I would like to design a PQC library for an AVR environment with minimal stack usage. If you have input about what should be covered, I'd be grateful for any input.
 
 ## What This code is trying to achieve
 * It aims to properly port the implementation of [PQM4](https://github.com/mupq/pqm4) to the AVR environment. This code is written in a way that is easy to read and understand.
