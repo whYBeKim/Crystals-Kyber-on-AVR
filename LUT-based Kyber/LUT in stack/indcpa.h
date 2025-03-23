@@ -1,0 +1,24 @@
+#ifndef INDCPA_H
+#define INDCPA_H
+#include "params.h"
+#include "polyvec.h"
+#include <stdint.h>
+
+void indcpa_keypair(uint8_t pk[KYBER_INDCPA_PUBLICKEYBYTES],
+    uint8_t sk[KYBER_INDCPA_SECRETKEYBYTES]);
+
+void indcpa_enc(uint8_t c[KYBER_INDCPA_BYTES],
+    const uint8_t m[KYBER_INDCPA_MSGBYTES],
+    const uint8_t pk[KYBER_INDCPA_PUBLICKEYBYTES],
+    const uint8_t coins[KYBER_SYMBYTES]);
+
+unsigned char indcpa_enc_cmp(const unsigned char* ct,
+    const unsigned char* m,
+    const unsigned char* pk,
+    const unsigned char* coins);
+
+void indcpa_dec(uint8_t m[KYBER_INDCPA_MSGBYTES],
+    const uint8_t c[KYBER_INDCPA_BYTES],
+    const uint8_t sk[KYBER_INDCPA_SECRETKEYBYTES]);
+
+#endif
