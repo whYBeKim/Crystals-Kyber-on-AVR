@@ -11,7 +11,7 @@ This code accompanies our paper (Title : "**An Optimized Instantiation of Post-Q
 ## SetUp/Code
 The description of **SetUp** and **Code** is as follows:
 
-* **SetUp** : We develop and benchmark the code using [Microchip studio](https://www.microchip.com/). Please select "New Project" in “Microchip studio” or “Atmel studio” and paste our code. Our target device is selected in `ATmega4808` with `6 Kbytes SRAM`, and `48 Kbytes flash memory` (Kyber-512). For Kyber-768 and Kyber-1024, we select `ATmega1280p`, which has `8 Kbytes SRAM`. The compile tool is `avr-gcc 5.4.0`, and we compile the code with the `-O3` option. 
+* **SetUp** : We develop and benchmark the code using [Microchip studio](https://www.microchip.com/). Please select "New Project" in “Microchip studio” or “Atmel studio” and paste our code. Our target device is selected in `ATmega4808` with `6 Kbytes SRAM`, and `48 Kbytes flash memory` (Kyber-512). For Kyber-768 and Kyber-1024, we select `ATmega1280`, which has `8 Kbytes SRAM`. The compile tool is `avr-gcc 5.4.0`, and we compile the code with the `-O3` option. If you want to run Kyber's full stream smoothly, please select `Atmega1284p`.
 We use an 8-bit AVR version of keccak implementation provided by [XKCP](https://github.com/XKCP/XKCP) library. Our Kyber implementation was designed based on optimized [PQM4](https://github.com/mupq/pqm4) code. “Code execution takes a long time! Please wait long enough that it's not a bug.”
 
 * **Code** : One can select security level of Kyber in line 5 of `params.h`. The available options are 2, 3, and 4, for security level 1, 3, and 5, respectively. The executable file starts from the `main.c`, and can be executed for each API of Kyber KEM. 
